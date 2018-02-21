@@ -14,11 +14,11 @@ function whileLoop(n){
   return "done"
 }
 function doWhileLoop(array){
-  function maybeTrue() {
-  return Math.random() >= 0.5
+do {
+  array.pop()
+} while (array.length>0 && maybeTrue())
+return array
 }
 
-do {
-  console.log('doo-bee-doo-bee-doo')
-} while (maybeTrue());
-}
+do_while_arr = ['a','b','c'];
+console.log(doWhileLoop(do_while_arr))
